@@ -1,0 +1,545 @@
+<!DOCTYPE html>
+<html>
+<title>Krishi Sarthi</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+<link rel="stylesheet" href="css/w3.css">
+<link rel="stylesheet" href="css/font.css">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="check.css">
+<style>
+    body,h1,h2,h3,h4,h5,h6 
+ 	 {
+ 	 	font-family: "Poppins", sans-serif
+ 	 },
+
+	body, html 
+	{
+		height: 100%;
+		line-height: 1.8;
+	}
+	
+
+	.bgimg-1 {
+	  background-position: center;
+	  background-size: cover;
+	  background-image: url("images/abiofortifie 1.png");
+	  min-height: 100%;
+	}
+	.bgimg-2{
+	  background-position: center;
+	  background-size: cover;
+	  /* background-image: url("images/mv6\ 1.png"); */
+	  background-image: url("images/back2.jpg");
+	  min-height: 60%;
+	}
+	
+	.bgimg-3{
+	  background-position: center;
+	  background-size: cover;
+	  background-image: url("images/India_Farming\ 1.png"),linear-gradient(128deg, rgba(232,218,11,1) 0%, rgba(0,212,255,1) 48%, rgba(8,132,45,1) 64%, rgba(20,255,43,0.9556197478991597) 100%);
+
+	  
+	  min-height: 60%;
+	  width: 70%;
+	  display: block;
+	  margin-left: auto;
+	  margin-right: auto;
+	}
+	.bgimg-5{
+	  background-position: center;
+	  background-size: cover;
+	  background-image: url("images/indian-farmer-working-traditional-way-with-bull-his-farm-indian-farming-scene_136354-2656\ 1.png");
+	  /*filter: blur(5px);*/
+	  min-height: 80%;
+	  width: 70%;
+	  display: block;
+	  margin-left: auto;
+	  margin-right: auto;
+	}
+	.bgimg-6{
+	  background-position: center;
+	  background-size: cover;
+	  background-image: url("images/farmer.jpg");
+	  
+	  min-height: 80%;
+	  width: 70%;
+	  display: block;
+	  margin-left: auto;
+	  margin-right: auto;
+	}
+/* .bgimg-4{
+  background-position: center;
+  background-size: cover;
+  background-image: url("images/white.png");
+  opacity: 0.4;
+  min-height: 60%;
+  width: 20%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+} */
+.w3-bar .w3-button {
+  padding: 16px;
+}
+</style>
+
+<body>
+    <!-- Navbar (sit on top) -->
+    <div class="w3-top">
+        <div class="w3-bar w3-white w3-card" id="myNavbar">
+            <a href="#home" class="w3-bar-item w3-button w3-wide"><img src="images/krushi sarthi final .png" style="width: 100px; height:100px; margin-left: 75px;"><b style="font-size: 28px;">Krishi Sarthi</b></a>
+            <!-- Right-sided navbar links -->
+            <div class="w3-right w3-hide-small" style="padding-top: 30px; margin-right: 15px;">
+                <a href="#about" class="w3-bar-item w3-button">ABOUT US</a>
+                <a href="#work" class="w3-bar-item w3-button"><i class="fa fa-th"></i> SERVICES</a>
+                <a href="#pricing" class="w3-bar-item w3-button"><i class="fa fa-image"></i>GALLERY</a>
+                <a href="#team" class="w3-bar-item w3-button"><i class="fa fa-user"></i> BLOG</a>
+                <a href="#contact" class="w3-bar-item w3-button"><i class="fa fa-envelope"></i> CONTACT US</a>
+            </div>
+            <!-- Hide right-floated links on small screens and replace them with a menu icon -->
+            <a href="javascript:void(0)" class="w3-bar-item w3-button w3-right w3-hide-large w3-hide-medium" onclick="w3_open()">
+                <i class="fa fa-bars"></i>
+            </a>
+        </div>
+    </div>
+    <!-- Sidebar on small screens when clicking the menu icon -->
+    <nav class="w3-sidebar w3-bar-block w3-black w3-card w3-animate-left w3-hide-medium w3-hide-large" style="display:none" id="mySidebar">
+        <a href="javascript:void(0)" onclick="w3_close()" class="w3-bar-item w3-button w3-large w3-padding-16">Close ×</a>
+        <a href="#about" onclick="w3_close()" class="w3-bar-item w3-button">ABOUT US</a>
+        <a href="#work" onclick="w3_close()" class="w3-bar-item w3-button">SERVICES</a>
+        <a href="#pricing" onclick="w3_close()" class="w3-bar-item w3-button">GALLERY</a>
+        <a href="#team" onclick="w3_close()" class="w3-bar-item w3-button">BLOG</a>
+        <a href="#contact" onclick="w3_close()" class="w3-bar-item w3-button">CONTACT US</a>
+    </nav>
+    <!-- Header with full-height image -->
+    <header class="bgimg-1 w3-display-container w3-grayscale-min" id="home">
+        <div class="w3-display-left w3-text-white" style="padding:48px">
+            <span class="w3-jumbo w3-hide-small">Start something that matters</span><br>
+            <span class="w3-xxlarge w3-hide-large w3-hide-medium">Start something that matters</span><br>
+            <span class="w3-large">Stop wasting valuable time with projects that just isn't you.</span>
+            <!-- <p><a href="#about" class="w3-button w3-white w3-padding-large w3-large w3-margin-top w3-opacity w3-hover-opacity-off">
+      Learn more and start today</a></p> -->
+        </div>
+        <!-- <div class="w3-display-bottomleft w3-text-grey w3-large" style="padding:24px 48px">
+    <i class="fa fa-facebook-official w3-hover-opacity"></i>
+    <i class="fa fa-instagram w3-hover-opacity"></i>
+    <i class="fa fa-snapchat w3-hover-opacity"></i>
+    <i class="fa fa-pinterest-p w3-hover-opacity"></i>
+    <i class="fa fa-twitter w3-hover-opacity"></i>
+    <i class="fa fa-linkedin w3-hover-opacity"></i>
+  </div> -->
+    </header>
+    <!-- About Section -->
+    <!-- <div class="w3-container" style="padding:128px 16px" id="about">
+  
+
+  <div class="contain">
+    <img src="images/Millet01 1.png" height="700px" width="1300px" style="padding-left:150px;z-index:-1" >
+<p id="rcorners2">   
+
+        <div style="position:absolute;top:90px;left:150px;right:800px;color:black;padding-left:130px">
+          <h2  style="text-transform:capitalize;position:relative;font-weight: bold;">About Us</h2>
+<p style="font-weight: bold;">Krishi Sarthi is an innovative idea which takes its roots from the struggles of farmers for buying the pre-requisites and selling the farms products.
+Agriculture being the backbone of our economy, needs to be worked out so that it is equipped with technical sustainability. This platform consists of 
+everything a farmer requires for farming right from seeds, fertilizers to pesticides and weedicides.<br><br>
+Krishi Sarthi is a bunch of professionals coming from various backgrounds working with a common aim to make agriculture sustainable through various 
+means such as improving supply chain management, providing technical aid to the farmers, helping them to compare markets before buying or selling. 
+With a user-friendly interface, this platform is going to help the farmers to 
+choose their products to be bought and sold from a nationwide array of vendors. It will also help the vendors to increase their business from local to 
+regional and more. </p>
+</p>
+   </div>
+</div>
+</div> -->
+    <section class="bgimg-6 w3-display-container w3-grayscale-min w3-padding-64">
+        <div class="w3-row-padding" style="font-weight: bold;">
+            <div class=" w3-text-white">
+                <h3 style="text-align: center; font-weight: bold;">About Us</h3>
+                <p style="text-align: center;font-size: 20px;font-weight: bold;"></p>
+            </div>
+            <br>
+            <div>
+                <!-- <p class="w3-wide"  style="font-weight: bold; font-size: 20px;"><i class="glyphicon glyphicon-shopping-cart" style="font-size:38px; font-weight:bolder; 
+      color: black;"></i>
+      Quality Products  </p>
+      <div >
+        <div class="w3-container" style="width:90%">
+          We aim at supplying first-class quality products. Quality assurance is our foremost priority.</div>
+      </div>
+      <br>
+      <p class="w3-wide" style="font-weight: bold; font-size: 20px;"><i class="glyphicon glyphicon glyphicon-home" style="font-size:38px; font-weight:bolder; 
+        color: black;">
+      </i>Residential Delivery</p>
+      <div class="">
+        <div class="w3-container " style="width:90%">There is no need for wandering around in search of shops for 
+          purchasing the products, these will be delivered at your doorstep.</div>
+      </div>
+      <br>
+      <p class="w3-wide" style="font-weight: bold; font-size: 20px;"><i class="glyphicon glyphicon glyphicon-cog" style="font-size:38px; font-weight:bolder; 
+        color: black;">
+      </i>Excellent Service</p>
+      <div >
+        <div class="w3-container " style="width:90%">There will be no room left for any mistakes while serving.
+           Instant redressal will be done in case of any error.</div>
+      </div>-->
+                <p class="w3-wide w3-margin" style="font-weight: bold;">
+                    Krishi Sarthi is an innovative idea which takes its roots from the struggles of farmers for buying the pre-requisites and selling the farms products.
+                    Agriculture being the backbone of our economy, needs to be worked out so that it is equipped with technical sustainability. This platform consists of
+                    everything a farmer requires for farming right from seeds, fertilizers to pesticides and weedicides.<br><br>
+                    Krishi Sarthi is a bunch of professionals coming from various backgrounds working with a common aim to make agriculture sustainable through various
+                    means such as improving supply chain management, providing technical aid to the farmers, helping them to compare markets before buying or selling.
+                    With a user-friendly interface, this platform is going to help the farmers to
+                    choose their products to be bought and sold from a nationwide array of vendors. It will also help the vendors to increase their business from local to
+                    regional and more.
+                </p>
+            </div>
+        </div>
+    </section>
+    <!-- Why choose us Section -->
+    <!-- <div class="w3-container" style="padding:128px 16px">
+  
+
+  <div class="contain1">
+    <img src="images/indian-farmer-working-traditional-way-with-bull-his-farm-indian-farming-scene_136354-2656 1.png" height="700px" width="1300px" style="padding-left:150px;z-index:-1">
+<p id="rcorners3">   
+
+        <div style="position:absolute;top:90px;left:150px;right:800px;color:black;padding-left:130px" >
+            
+          <h2  style="text-transform:capitalize;position:relative;padding-top: 200px;"><b>Why <br>Choose<br> Us?</b></h2>
+        
+        <div id="vm">
+          <h2> <i class="glyphicon glyphicon-shopping-cart" style="font-size:48px; font-weight:bolder; color: black;"></i>Quality Products</h2>
+          <p>We aim at supplying first-class quality products. Quality assurance is our foremost priority.</p>
+          <h2> <i class="glyphicon glyphicon glyphicon-home" style="font-size:48px;"></i>Residential Delivery</h2>
+          <p>There is no need for wandering around in search of shops for purchasing the products, these will be delivered at your doorstep.</p>
+          <h2> <i class="glyphicon glyphicon glyphicon-cog" style="font-size:48px;"></i>Excellent Service</h2>
+          <p>There will be no room left for any mistakes while serving. Instant redressal will be done in case of any error.</p>
+        </div>
+   </div>
+   </p>
+</div>
+</div> -->
+    <br>
+    <section class="bgimg-5 w3-display-container w3-grayscale-min w3-padding-64">
+        <div class="w3-row-padding" style="font-weight: bold;">
+            <div class="    w3-text-white">
+                <h3 class="w3-center w3-text-white" style="font-weight: bold;">Why Choose Us?</h3>
+                <!-- <h3 style="text-align: center; font-weight: bold;">Why Choose Us?</h3> -->
+                <p style="text-align: center;font-size: 20px;font-weight: bold;"></p>
+            </div>
+            <br>
+            <div class="w3-margin">
+                <p class="w3-wide" style="font-weight: bold; font-size: 20px;"><i class="glyphicon glyphicon-shopping-cart" style="font-size:38px; font-weight:bolder; 
+      color: black;"></i>
+                    Quality Products </p>
+                <div>
+                    <div class="w3-container" style="width:90%">
+                        We aim at supplying first-class quality products. Quality assurance is our foremost priority.</div>
+                </div>
+                <br>
+                <p class="w3-wide" style="font-weight: bold; font-size: 20px;"><i class="glyphicon glyphicon glyphicon-home" style="font-size:38px; font-weight:bolder; 
+        color: black;">
+                    </i>Residential Delivery</p>
+                <div class="">
+                    <div class="w3-container " style="width:90%">There is no need for wandering around in search of shops for
+                        purchasing the products, these will be delivered at your doorstep.</div>
+                </div>
+                <br>
+                <p class="w3-wide" style="font-weight: bold; font-size: 20px;"><i class="glyphicon glyphicon glyphicon-cog" style="font-size:38px; font-weight:bolder; 
+        color: black;">
+                    </i>Excellent Service</p>
+                <div>
+                    <div class="w3-container " style="width:90%">There will be no room left for any mistakes while serving.
+                        Instant redressal will be done in case of any error.</div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <br>
+    <!-- Vission Mission Section-->
+    <!-- <div class="w3-container" style="font-weight: bold;" >
+  <div id="visionmission">
+         
+    
+  <img src="images/mv6 1.png" height="500px" width="100%" style="padding-bottom:10px;padding-top:10px" class="w3-image">
+  <div class="container">
+<p id="rcorners1">
+<div style="position:absolute;top:100px;color:black">
+
+        <h1 style="text-align:left;padding-left:350px;color:white">   
+                  VISION
+                        <span style="float:right;padding-right:450px">
+                  MISSION
+                       </span>
+   <h1 style="text-align:left;padding-left:250px;padding-right:90px">   
+     <hr></h1>
+        </h1>
+
+                        
+                <li style="text-transform:capitalize;font-family:'Times New Roman',serif;text-align:left;padding-left:200px">
+                 
+                   To assist farmers for prolific cultivation.
+
+          
+               
+               
+
+               
+    <span style="float:right;padding-right:80px">
+     <ul style="padding-left:250px;">
+
+   <li style="margin:0 0;">To develop a platform wherein the farmer is provided with various options to buy<br> and sell products from local to national level.</li>
+   <li style="margin: 10px 0;"> To improve the supply chain from manufacturer to farmer and again from farmer to<br> Agro-based industries thereby decreasing the middle men costs.</li>
+   <li style="margin: 10px 0;">To increase the technological utilizations in farming so as to ease man power and<br> reduce the cost.</li>
+   <li style="margin: 10px 0;">To increase the customer base of vendors and farmers thereby enabling them to do<br> business on a higher scale.</li>
+                     
+    </span>
+</p>
+           </div>
+      </div>
+ </div>  
+</div> -->
+    <section class="bgimg-2 w3-display-container w3-grayscale-min w3-padding-64 " id="home">
+        <!-- <div class="w3-row-padding">
+    <span class="w3-display-left w3-text-white w3-col-m6" >
+        <span class="w3-jumbo w3-hide-small">Vision</span><br>
+        <span class="w3-xxlarge w3-hide-large w3-hide-medium">Vision</span><br>
+        <span class="w3-medium w3-text-black"> 
+            <ul>
+            <li>To assist farmers for prolific cultivation.
+            </li><br>
+        <br>
+    <br>
+</ul>
+            </span>
+        </span>
+        <span class="w3-display-right w3-text-white w3-col-m6" >
+            <span class="w3-jumbo w3-hide-small">Mission</span><br>
+            <span class="w3-xxlarge w3-hide-large w3-hide-medium">Mission</span><br>
+            <span class="w3-medium w3-text-black">
+                <ul>
+    
+                    <li >To develop a platform wherein the farmer is provided with various options to buy and sell products from local to national level.</li>
+                    <li > To improve the supply chain from manufacturer to farmer and again from farmer to Agro-based industries thereby decreasing the middle men costs.</li>
+                    <li >To increase the technological utilizations in farming so as to ease man power and reduce the cost.</li>
+                    <li >To increase the customer base of vendors and farmers thereby enabling them to do business on a higher scale.</li>
+                                      
+                </ul>   
+            </span>
+        </span>
+    </div> -->
+        <div class="w3-row-padding">
+            <div class="w3-col m6">
+                <h3 class="w3-text-white" style="font-weight: bold; font-size: 22px;">Vision</h3>
+                <ul style="font-weight: bold; font-size: 20px;">
+                    <li>To assist farmers for prolific cultivation.
+                        <!-- </li><br>
+        <br>
+    <br> -->
+                </ul>
+            </div>
+            <div class="w3-col m6 ">
+                <h3 class="w3-text-white" style="font-weight: bold; font-size: 22px;">Mission</h3>
+                <!-- <p class="w3-wide"><i class="fa fa-camera w3-margin-right"></i>Photography</p>
+          <div class="w3-grey">
+            <div class="w3-container w3-dark-grey w3-center" style="width:90%">90%</div>
+          </div>
+          <p class="w3-wide"><i class="fa fa-desktop w3-margin-right"></i>Web Design</p>
+          <div class="w3-grey">
+            <div class="w3-container w3-dark-grey w3-center" style="width:85%">85%</div>
+          </div>
+          <p class="w3-wide"><i class="fa fa-photo w3-margin-right"></i>Photoshop</p>
+          <div class="w3-grey">
+            <div class="w3-container w3-dark-grey w3-center" style="width:75%">75%</div>
+          </div> -->
+                <ul style="font-weight: bold; font-size: 20px;">
+                    <li>To develop a platform wherein the farmer is provided with various options to buy and sell products from local to national level.</li>
+                    <li> To improve the supply chain from manufacturer to farmer and again from farmer to Agro-based industries thereby decreasing the middle men costs.</li>
+                    <li>To increase the technological utilizations in farming so as to ease man power and reduce the cost.</li>
+                    <li>To increase the customer base of vendors and farmers thereby enabling them to do business on a higher scale.</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+    <br>
+    <!-- Services Section -->
+    <section class="bgimg-3 w3-display-container w3-grayscale-min w3-padding-64" id="work">
+        <!-- <img src="images/India_Farming 1.png" height="700px" width="1300px" style="padding-left:150px;z-index:-1">
+
+  
+  <h1 style="text-align: center;">Our Services</h1> -->
+        <!-- <div class="contain" style="font-weight: bold;">
+    <img src="images/India_Farming 1.png" height="700px" width="1300px" style="padding-left:150px;z-index:-1">
+<p>   
+
+        <div style="position:absolute;top:30px;left:400px;right:600px;color:black;">
+          <h2  style="text-transform:capitalize;text-align: center;"><b>Our Services</b></h2>
+
+          
+  <div class="w3-row-padding" style="margin-top:64px;">
+    <div class="w3-col l3 m6" id="box">
+   <div class="card" >
+    <img class="card-img-top" src="images/truck.png" alt="Card image cap" width="100px" height="100px" style=" display: block;
+    margin-left: auto;
+    margin-right: auto; ">
+    <div class="card-body">
+      <p class="card-text">Home Delivery<br>
+        Tension for transportation? Worry no more! We promise safe, doorstep delivery of your order .</p>
+    </div>
+  </div>
+    </div>
+    
+    <div class="w3-col l3 m6" id="box0">
+     <div class="card" >
+    <img class="card-img-top" src="images/cart.png" alt="Card image cap" width="100px" height="100px" style=" display: block;
+    margin-left: auto;
+    margin-right: auto;">
+    <div class="card-body">
+      <p class="card-text">Online Market<br>
+        With an aim to take agricultural trade to the next level, we have set up an online market for farmers,vendors to buy & sell agroproducts.</p>
+    </div>
+  </div>
+    </div>
+  </div>
+        
+  
+  <div class="w3-row-padding w3-section">
+    <div class="w3-col l3 m6" id="box1">
+      <div class="card" >
+    <img class="card-img-top" src="images/pc.png" alt="Card image cap" width="100px" height="100px" style=" display: block;
+    margin-left: auto;
+    margin-right: auto;">
+    <div class="card-body">
+      <p class="card-text">Online Booking<br>
+        Tough tasks? One solution-Advanced Technology. Book tractor, JCB, Thresher and other such equipments on our online portal.</p>
+    </div>
+  </div>
+    </div>
+    <div class="w3-col l3 m6" id="box2">
+    <div class="card" >
+    <img class="card-img-top" src="images/qna.png" alt="Card image cap" width="100px" height="100px" style=" display: block;
+    margin-left: auto;
+    margin-right: auto;">
+    <div class="card-body">
+      <p class="card-text">Consultancy<br>
+        Got queries regarding crop, cattle or cultivation?, Booking tools or tractor? We are here to hear it, with a team of experts to help you out.</p>
+    </div>
+  </div>
+    </div>
+  </div> 
+
+  
+
+</p>
+   </div>
+</div>
+</div> -->
+        <h3 class="w3-center w3-text-white" style="font-weight: bold;">Our Services</h3>
+        <p class="w3-center w3-large w3-text-white">Key features of our company</p>
+        <div class="w3-row-padding w3-center" style="margin-top:64px; font-weight: ;color: #c7c7c7">
+            <div class="w3-quarter" ">
+      <i class=" fa fa-truck w3-margin-bottom w3-jumbo w3-center"></i>
+                <p class="w3-large">Home Delivery</p>
+                <p>Tension for transportation? Worry no more! We promise safe, doorstep delivery of your order .</p>
+            </div>
+            <div class="w3-quarter">
+                <i class="fa fa-cart-plus w3-margin-bottom w3-jumbo"></i>
+                <p class="w3-large">Online Market</p>
+                <p>With an aim to take agricultural trade to the next level, we have set up an online market for farmers,vendors to buy & sell agroproducts.</p>
+            </div>
+            <div class="w3-quarter">
+                <i class="fa fa-desktop w3-margin-bottom w3-jumbo"></i>
+                <p class="w3-large">Online Booking</p>
+                <p>Tough tasks? One solution-Advanced Technology. Book tractor, JCB, Thresher and other such equipments on our online portal.</p>
+            </div>
+            <div class="w3-quarter">
+                <i class="fa fa-comments w3-margin-bottom w3-jumbo"></i>
+                <p class="w3-large">Consultancy</p>
+                <p>Got queries regarding crop, cattle or cultivation?, Booking tools or tractor? We are here to hear it, with a team of experts to help you out.</p>
+            </div>
+        </div>
+    </section>
+    <br>
+    <!-- Contact Section -->
+    <div class="w3-container w3-light-grey" style="padding:128px 16px" id="contact">
+        <h3 class="w3-center">CONTACT</h3>
+        <p class="w3-center w3-large">Get in touch. Send us a message:</p>
+        <div style="margin-top:48px">
+            <!-- <p><i class="fa fa-map-marker fa-fw w3-xxlarge w3-margin-right"></i> Location</p> -->
+            <p><i class="fa fa-phone fa-fw w3-xxlarge w3-margin-right"></i> Telephone: 9604246581 </p>
+            <p><i class="fa fa-envelope fa-fw w3-xxlarge w3-margin-right"> </i>Email: krushisarathi2020@gmail.com</p>
+            <br>
+            <div style="margin-left: 20px;">
+                <a href="https://www.facebook.com/100827928342290/posts/170468844711531/?app=fbl"> <i class="fa fa-facebook-official w3-hover-opacity" style="font-size: 25px;"></i></a>&nbsp;&nbsp;
+                <a href="https://instagram.com/krushisarathi?igshid=bpwnm7ya2gji"> <i class="fa fa-instagram w3-hover-opacity" style="font-size: 25px;"></i></a>&nbsp;&nbsp;
+                <a href="https://www.youtube.com/channel/UCTTbwkqfjvTXWp0qPrx74fQ"> <i class="fa fa-youtube w3-hover-opacity" style="font-size: 25px;"></i></a>&nbsp;&nbsp;
+                <!-- <i class="fa fa-pinterest-p w3-hover-opacity"></i>
+      <i class="fa fa-twitter w3-hover-opacity"></i> -->
+                <a href="https://www.linkedin.com/in/krushi-sarathi-4b82b31b0"> <i class="fa fa-linkedin w3-hover-opacity" style="font-size: 25px;"></i>
+            </div>
+            <br>
+            <form action="/action_page.php" target="_blank">
+                <p><input class="w3-input w3-border" type="text" placeholder="Name" required name="Name"></p>
+                <p><input class="w3-input w3-border" type="text" placeholder="Email" required name="Email"></p>
+                <p><input class="w3-input w3-border" type="text" placeholder="Phone Number" required name="Phone Number"></p>
+                <p><input class="w3-input w3-border" type="text" placeholder="Message" required name="Message"></p>
+                <p>
+                    <button class="w3-button w3-black" type="submit">
+                        <i class="fa fa-paper-plane"></i> SEND MESSAGE
+                    </button>
+                </p>
+            </form>
+            <!-- Image of location/map -->
+            <!-- <img src="/w3images/map.jpg" class="w3-image w3-greyscale" style="width:100%;margin-top:48px"> -->
+        </div>
+    </div>
+    <!-- Footer -->
+    <footer class="w3-center w3-black w3-padding-64">
+        <a href="#home" class="w3-button w3-light-grey"><i class="fa fa-arrow-up w3-margin-right"></i>To the top</a><br><br>
+        <!-- <div class="w3-xlarge w3-section">
+    <i class="fa fa-facebook-official w3-hover-opacity"></i>
+    <i class="fa fa-instagram w3-hover-opacity"></i>
+    <i class="fa fa-snapchat w3-hover-opacity"></i>
+    <i class="fa fa-pinterest-p w3-hover-opacity"></i>
+    <i class="fa fa-twitter w3-hover-opacity"></i>
+    <i class="fa fa-linkedin w3-hover-opacity"></i>
+  </div> -->
+        <!-- <p>Powered by <a href="https://www.w3schools.com/w3css/default.asp" title="W3.CSS" target="_blank" class="w3-hover-text-green">w3.css</a></p>-->
+        <center>
+            <p>
+                &copy; Copyright Krishi Sarthi <br>
+                All Rights Reserved</p>
+        </center>
+    </footer>
+    <script>
+    // Modal Image Gallery
+    function onClick(element) {
+        document.getElementById("img01").src = element.src;
+        document.getElementById("modal01").style.display = "block";
+        var captionText = document.getElementById("caption");
+        captionText.innerHTML = element.alt;
+    }
+
+
+    // Toggle between showing and hiding the sidebar when clicking the menu icon
+    var mySidebar = document.getElementById("mySidebar");
+
+    function w3_open() {
+        if (mySidebar.style.display === 'block') {
+            mySidebar.style.display = 'none';
+        } else {
+            mySidebar.style.display = 'block';
+        }
+    }
+
+    // Close the sidebar with the close button
+    function w3_close() {
+        mySidebar.style.display = "none";
+    }
+    </script>
+</body>
+
+</html>
